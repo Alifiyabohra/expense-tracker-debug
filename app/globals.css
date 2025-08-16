@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@import "tailwindcss-animate";
-
+/* @import "tailwindcss-animate"; */
 
 
 /* Your custom styles below this line */
@@ -116,5 +115,14 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer utilities {
+  .gradient {
+    @apply bg-gradient-to-br from-blue-600 to-purple-600;
+  }
+
+  .gradient-title {
+    @apply gradient from-blue-600 to-purple-600 font-extrabold tracking-tighter pr-2 pb-2 text-transparent;
+  }
+}
 
 
